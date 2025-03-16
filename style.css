@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Fraunces", serif;
+}
+
+body {
+    background-color: #b3dea4;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+
+.container {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.container .box-left {
+    width: 250px;
+    background-color: #83ab76;
+}
+
+.container .box-left .profile {
+    width: 100%;
+    height: 270px;
+    background-color: #83ab76;
+}
+
+.container .box-left .profile img {
+    width: 90%;
+    height: 100%;
+}
+
+.container .box-left .content {
+    padding: 0 25px;
+}
+
+.container .resume-item {
+    padding: 25px 0;
+    border-bottom: 2px solid #333e515e;
+}
+
+.container .title {
+    margin-bottom: 20px;
+}
+
+.container .box-left .bold {
+    color: #f7f4d5;
+}
+
+.container .box-left .regular {
+    color: #d9e1e4;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container .box-left ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.container .box-left ul li:last-child {
+    margin-bottom: 0;
+}
+
+.container .box-left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    color: #353e4e;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.container .box-left ul li .data {
+    color: #d9e1e4;
+}
+
+.container .box-left .resume-skills ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: #d9e1e4;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .box-left .resume-skills ul li .skill-name {
+    width: 50%;
+}
+
+.container .box-left .resume-skills ul li .skill-progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background-color: #07420c;
+    position: relative;
+}
+
+.container .box-left .resume-skills ul li .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+}
+
+.container .box-lft .resume-skills ul li .skills-parcent {
+    width: 15%;
+}
+
+.container .box-left .resume-social .semi-bold {
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* right design */
+
+.container .box-right {
+    width: 520px;
+    background-color:#f7f4d5;
+    padding: 25px;
+}
+
+.container .box-left .resume-item:last-child,
+.container .box-right .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+.container .box-right .bold {
+    color: #333e51;
+}
+
+.container .box-right ul li {
+    position: relative;
+}
+
+.container .box-right ul li .date {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.container .box-right ul li .info {
+    margin-bottom: 20px;
+}
+
+.container .box-right ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+.container .box-right .resume-work ul,
+.container .box-right .resume-education ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+
+.container .box-right .resume-work ul li::before,
+.container .box-right .resume-education ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -50;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 0px solid #333e51;
+}
+
+
+.container .box-right .resume-education ul li ul li::after,
+.container .box-right .resume-work ul li ul li::after
+ {
+    display: none; /* Hilangin pseudo-element */
+}
+
+.container .box-right .resume-education ul li ul li,
+.container .box-right .resume-work ul li ul li  {
+    padding-left: 2px; /* Bikin menjorok */
+    position: relative;
+}
+
+.container .box-right .resume-education ul li ul li,
+.container .box-right .resume-work ul li ul li  {
+    list-style-type: disc;
+    margin-bottom: 2px;
+}
+
+
+.container .box-right .resume-work ul li::after,
+.container .box-right .resume-education ul li::after {
+    content: "";
+    position: absolute;
+    background-color: #333e51;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+}
+
+
+.container .icon i,
+.container .i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table .box-right .resume-plusminus{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #6e7f80;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #507b51;
+    color: rgb(231, 239, 216);
+}
+
+tr, td :nth-child(even) {
+    background-color: #dbecd4;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
